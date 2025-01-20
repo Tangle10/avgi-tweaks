@@ -1,0 +1,171 @@
+# Should ideally feature all the parts needed to execute a couple small changes to Avgi space, once you've successfully escaped it.
+
+mission "Avgi Tweaks: Manual De-Shroudinator"
+	job
+	repeat
+	name "De-shroud the Tangled Shroud"
+	description "Accept this to totally cheat and make the Shroud visible."
+	source "Aviskir"
+	to offer
+		has "Avgi: Twilight Escape 1: done"
+		not "Avgi Tweaks: deshrouded"
+	on accept
+		event "Avgi Tweaks: deshroudination"
+		conversation
+			`You hike through an intact Avgi city, and happen upon a tiny room with ADMIN ROOM written on it in Republican Standard Script. Seeing a big red button, you hit it as hard as you can.`
+	on enter Anax
+		fail
+
+mission "Avgi Tweaks: Manual Re-Shroudinator"
+	job
+	repeat
+	name "Re-shroud the Tangled Shroud"
+	description "Accept this to rectify your cheat and make the Shroud shrouded once more."
+	source "Aviskir"
+	to offer
+		has "Avgi: Twilight Escape 1: done"
+		has "Avgi Tweaks: deshrouded"
+	on accept
+		event "Avgi Tweaks: reshroudination"
+		conversation
+			`You hike through an intact Avgi city, and happen upon a tiny room with ADMIN ROOM written on it in Republican Standard Script. Seeing a big green button, you hit it as hard as you can.`
+	on enter Anax
+		fail
+
+event "Avgi Tweaks: deshroudination"
+	set "Avgi Tweaks: deshrouded"
+	system H-1
+		remove shrouded
+	system He-4
+		remove shrouded
+	system Li-7
+		remove shrouded
+	system Be-9
+		remove shrouded
+	system Postlude
+		remove shrouded
+	system B-11
+		remove shrouded
+	system Demilude
+		remove shrouded
+	system C-12
+		remove shrouded
+	system N-14
+		remove shrouded
+	system O-16
+		remove shrouded
+	system F-19
+		remove shrouded
+	system Ne-20
+		remove shrouded
+	system Na-23
+		remove shrouded
+	system Mg-24
+		remove shrouded
+	system Si-28
+		remove shrouded
+	system Prelude
+		remove shrouded
+	system P-31
+		remove shrouded
+	system S-32
+		remove shrouded
+	system Interlude
+		remove shrouded
+	system Cl-35
+		remove shrouded
+	system K-39
+		remove shrouded
+	system Ensemble
+		remove shrouded
+	system Ca-40
+		remove shrouded
+	system Ar-40
+		remove shrouded
+	system Ge-73
+		remove shrouded
+	system As-75
+		remove shrouded
+	system Br-80
+		remove shrouded
+	system Kr-84
+		remove shrouded
+	
+		
+event "Avgi Tweaks: reshroudination"
+	clear "Avgi Tweaks: deshrouded"
+	system H-1
+		add shrouded
+	system He-4
+		add shrouded
+	system Li-7
+		add shrouded
+	system Be-9
+		add shrouded
+	system Postlude
+		add shrouded
+	system B-11
+		add shrouded
+	system Demilude
+		add shrouded
+	system C-12
+		add shrouded
+	system N-14
+		add shrouded
+	system O-16
+		add shrouded
+	system F-19
+		add shrouded
+	system Ne-20
+		add shrouded
+	system Na-23
+		add shrouded
+	system Mg-24
+		add shrouded
+	system Si-28
+		add shrouded
+	system Prelude
+		add shrouded
+	system P-31
+		add shrouded
+	system S-32
+		add shrouded
+	system Interlude
+		add shrouded
+	system Cl-35
+		add shrouded
+	system K-39
+		add shrouded
+	system Ensemble
+		add shrouded
+	system Ca-40
+		add shrouded
+	system Ar-40
+		add shrouded
+	system Ge-73
+		add shrouded
+	system As-75
+		add shrouded
+	system Br-80
+		add shrouded
+	system Kr-84
+		add shrouded
+		
+# system Avasaa-Novaa
+#	shrouded
+# system Kasii-Cavaasa
+#	shrouded
+# system Kasii-Sola
+#	shrouded
+# system Kasi-Vasa-Novaa
+#	shrouded
+# system Khasola-Ryuit
+#	shrouded
+# system Kiiraj-Luue
+#	shrouded
+# system Mavra-Ijsola
+#	shrouded
+# system Uuoru-Sossa
+#	shrouded
+# system Vasa-Oorua
+#	shrouded

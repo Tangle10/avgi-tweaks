@@ -1,0 +1,37 @@
+# Adds small shipyards to besieged Avgi worlds, allowing the player to fight past the Aberrant and buy a few ships. These ships are available elsewhere, but some players may find them useful.
+# The core idea is that some of the cheaper-to-produce Avgi vessels are snuck to the surface on occasion (or built on the ground!) to be launched in breaking the blockade, and by killing the Aberrant and landing you've shown that you at least won't blow too many of them up.
+
+# These are launched as payload by spaceplanes on Cyreal, presumably with your own fleet providing enough protection for them to slip back to the surface before being attacked.
+shipyard "Avgi Spaceplane"
+	"Photikon"
+	"Vibratia"
+	"Optikon"
+	
+# These are launched using Stilacrest's intact launch loop, and likewise probably require a lot of fleet protection.
+shipyard "Avgi Loop"
+	"Phononos"
+	"Tremoros"
+	"Polari"
+
+# While Aviskir's infrastructure is badly damaged, it's certainly still possible to get small payloads into orbit quickly.
+shipyard "Avgi Rocket"
+	"Akoustiki"
+	"Sonikis"
+	"Undulon"
+
+# These ships launch themselves from Thilos, as Thilos' landing pads are said to be built to withstand torches. Sure, it's flimsy, but it's good enough for me!
+shipyard "Avgi Torch"
+	"Tremoros"
+	"Interferos"
+	
+planet Aviskir
+	add shipyard "Avgi Rocket"
+
+planet Thilos
+	add shipyard "Avgi Torch"
+	
+planet Cyreal
+	add shipyard "Avgi Spaceplane"
+	
+planet Stilacrest
+	add shipyard "Avgi Loop"
